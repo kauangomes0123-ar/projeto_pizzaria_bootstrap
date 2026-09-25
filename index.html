@@ -67,6 +67,55 @@
         </div>
 
     </nav>
-</body>
+    
+    <section class="bg-light py-5">
+
+        <div class="container">
+        <!-- #row - cria uma linha do sistema de grid do bootstrap.
+     align-items-center - centraliza verticalmente os elementos 
+     que serao dentro da linha-->
+     <div class="row align-items-center">
+        <!-- col md 6 cria uma coluna que ocupa 6 das 12 partes do grid a partir
+         de telas medias(md)
+         como o grid possui 12 colunas
+         6+6 = duas colunas 50% do espaco.
+         Em telas menores que md , as colunas ficam uma abaixo da outra-->
+         <div class="col-md-6">
+            <!-- display 4 aplica um tamanho grande de destaque ao texto 
+             fw-bold - deixa o texto em negrito-->
+             <h1 class="display-4 fw-bold">
+                A melhor pizza de Fernandopolis!
+             </h1>
+             <p class="lead">
+                Pizzas artesanais preparadas com igredientes selecionados pelo
+                proprio ratatouille e muito sabor.
+             </p>
+             <!-- btn- aplica a estilização padrão do botão do Bootstrap.
+              btn-danger - deixa o botão vermelho
+              btn-lg cria um botao de tamanho grande
+              lg- large-->
+              <a href="#pizzas" class="btn-danger btn-lg">Ver Cardápio</a>
+              
+         </div>
+         <!-- col-md-6 - ocupa as outras 6 colunas do Grid
+          text-center- centraliza o conteudo/texto
+          mt-4 - Adiciona margem superior
+          m=margem
+          y=top
+          mt-md-0 - a partir de telas md, remove a margem superior
+          isso é util porque no celular a imagem ficara abaixo do texto
+           e precisara de um espaço entre eles-->
+         <div class="col-md-6 text-center mt-4 mt-md-0">
+            <!-- img-fluid - torna a imagem responsiva 
+             a imagem diminui de acordo com o tamanho disponivel 
+             rounded deixa os cantos da imagem arredondados
+             shadow adiciona uma sombra-->
+             <img src="img.jpg" class="img-fluid rounded shadow" alt="Pizza">
+         </div>
+        </div>
+     </div>
+    </section>
+    
+    </body>
 
 </html>
